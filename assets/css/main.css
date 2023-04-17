@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --subtitle-color: #746e82;
+  --secondary-title-color: #7a5fec;
+  --title-color: #7c3aed;
+  --border-details: #c1b2fa;
+  --bg-app: #f3f0ff;
+  --bg-color: #fbfaff
+  --text-color: #575361;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 130%;
+}
+
+
+#app{
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files{
+  background-color: var(--bg-app);
+  border: 1px dashed var(--border-details);
+  border-radius: 8px;
+  width: 440px;
+
+  text-align: center;
+  padding: 28px 0 32px;
+  position: relative;
+}
+
+.drag-files input{
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph-bold{
+  font-size: 4.8rem;
+  color: var(--title-color);
+}
+
+.drag-files h3{
+  margin-top: 1.2rem;
+
+  font-size: 1.6rem;
+  color: var(--secondary-title-color);
+}
+
+.drag-files p{
+  font-size: 1.4rem;
+  color: var(--subtitle-color);
+}
+
+.drag-files.dragover{
+  background-color: var(--border-details);
+}
+
+.files{
+  margin-top: 2rem;
+
+  display: grid;
+  gap: 1.2rem;
+}
+
+.box {
+  padding: 8px;
+
+  background-color: #fff;
+  box-shadow: 0px 4px 16px var(--border-details);
+  border-radius: 8px;
+}

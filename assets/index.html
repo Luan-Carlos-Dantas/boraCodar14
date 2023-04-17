@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Componente de upload</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="drag-files">
+        <i class="ph-bold ph-cloud-arrow-up"></i>
+        <h3>Importe seus arquivos</h3>
+        <p>Arraste ou clique para fazer upload</p>
+        <input type="file" />
+      </section>
+      <section class="files">
+        <div class="box success">
+          <div class="icon">
+            <i class="ph-bold ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename"></div>
+            <div class="filesize"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="action"></div>
+        </div>
+        <div class="box done">
+          <div class="icon">
+            <i class="ph-bold ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename"></div>
+            <div class="filesize"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="action"></div>
+        </div>
+        <div class="box error">
+          <div class="icon">
+            <i class="ph-bold ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename"></div>
+            <div class="filesize"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="action"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
